@@ -1,0 +1,13 @@
+{
+  "name": "gastofacil-landing",
+  "compatibility_date": "2026-04-09",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "public"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}

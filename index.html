@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GastoFácil: plataforma SaaS multi-tenant para administrar pagos de gastos comunes en comunidades habitacionales. Centraliza pagos, documentos y accesos por condominio.">
+    <meta property="og:title" content="GastoFácil | Administración simple de gastos comunes">
+    <meta property="og:description" content="Plataforma web para que condominios y comunidades gestionen pagos de gastos comunes, documentos y accesos en un solo lugar.">
+    <meta property="og:type" content="website">
+    <title>GastoFácil | Administración simple de gastos comunes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="navbar">
+        <div class="nav-content">
+            <a href="#inicio" class="logo" aria-label="GastoFácil, ir al inicio">GastoFácil</a>
+            <nav class="desktop-nav" aria-label="Navegación principal">
+                <ul class="nav-links-desktop">
+                    <li><a href="#proposito">Propósito</a></li>
+                    <li><a href="#funciones">Funciones</a></li>
+                    <li><a href="#ventajas">Ventajas</a></li>
+                    <li><a href="#como-funciona">Cómo funciona</a></li>
+                    <li><a href="#roles">Roles</a></li>
+                    <li><a href="#faq">Preguntas</a></li>
+                </ul>
+            </nav>
+            <a href="https://gastofacil.femedinare.tech/" class="btn btn-primary btn-sm">Ingresar a la plataforma</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+        <ul class="nav-links">
+            <li><a href="#proposito">Propósito</a></li>
+            <li><a href="#funciones">Funciones</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#roles">Roles</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+            <li><a href="https://gastofacil.femedinare.tech/" class="btn btn-primary">Ingresar a la plataforma</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="hero-badge">Plataforma SaaS multi-tenant para comunidades</p>
+                    <h1>La forma simple de administrar los gastos comunes</h1>
+                    <p class="hero-description">GastoFácil centraliza los pagos de gastos comunes, los documentos y los accesos de tu condominio en un solo lugar, accesible desde cualquier navegador. Sin instalaciones, sin planillas dispersas.</p>
+                    <div class="hero-buttons">
+                        <a href="https://gastofacil.femedinare.tech/" class="btn btn-primary">Ingresar a mi condominio</a>
+                        <a href="mailto:contacto@mastema.tech?subject=Demo%20GastoF%C3%A1cil%20para%20mi%20comunidad" class="btn btn-secondary">Solicitar una demo</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li>100% web, sin instalación</li>
+                        <li>Un espacio por comunidad</li>
+                        <li>Documentos siempre respaldados</li>
+                    </ul>
+                </div>
+                <div class="hero-card" aria-hidden="true">
+                    <div class="mock-window">
+                        <div class="mock-bar"><span></span><span></span><span></span></div>
+                        <div class="mock-body">
+                            <p class="mock-title">Mi condominio</p>
+                            <div class="mock-row"><span>Pagos del mes</span><strong>Al día</strong></div>
+                            <div class="mock-row"><span>Documentos</span><strong>Disponibles</strong></div>
+                            <div class="mock-row"><span>Accesos</span><strong>Por rol</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proposito" class="section">
+            <div class="container">
+                <h2 class="section-title">Propósito</h2>
+                <p class="section-lead">Administrar los gastos comunes suele significar planillas repartidas, comprobantes por chat y cobros difíciles de seguir. GastoFácil existe para ordenar esa operación.</p>
+                <div class="cards-3">
+                    <article class="card">
+                        <h3>Orden</h3>
+                        <p>Cada comunidad tiene su propio espacio: pagos, documentos y usuarios organizados por condominio, sin mezclar información entre comunidades.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Transparencia</h3>
+                        <p>Residentes y administradores ven la misma información: qué se cobró, qué se pagó y qué documentos lo respaldan.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Menos carga administrativa</h3>
+                        <p>Menos tiempo buscando comprobantes y conciliando pagos, más tiempo para gestionar la comunidad.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="funciones" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Funciones</h2>
+                <p class="section-lead">Todo lo que una comunidad necesita para el día a día de sus gastos comunes.</p>
+                <div class="cards-3">
+                    <article class="card">
+                        <h3>Gestión de pagos</h3>
+                        <p>Registro y seguimiento de los pagos de gastos comunes por unidad y período, con el estado de cada cobro visible para la administración.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Documentos y comprobantes</h3>
+                        <p>Almacenamiento centralizado de comprobantes y documentos de respaldo, disponibles para consulta cuando se necesiten.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Multi-comunidad</h3>
+                        <p>Arquitectura multi-tenant: cada condominio opera en su propio espacio aislado, con sus usuarios y su información.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Accesos por rol</h3>
+                        <p>Perfiles diferenciados para administradores, residentes y supervisión general, cada uno con los permisos que le corresponden.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Acceso desde cualquier dispositivo</h3>
+                        <p>Plataforma web responsive: funciona en computador, tablet y teléfono sin instalar aplicaciones.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Disponibilidad cloud</h3>
+                        <p>Infraestructura en la nube con alta disponibilidad, para que la información esté accesible cuando la comunidad la necesite.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ventajas" class="section">
+            <div class="container">
+                <h2 class="section-title">Ventajas</h2>
+                <div class="split">
+                    <div>
+                        <h3>Para la administración</h3>
+                        <ul class="check-list">
+                            <li>Información centralizada en vez de planillas dispersas.</li>
+                            <li>Documentos de respaldo siempre a mano.</li>
+                            <li>Control de accesos según el rol de cada persona.</li>
+                            <li>Un espacio separado por cada comunidad administrada.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Para los residentes</h3>
+                        <ul class="check-list">
+                            <li>Consulta simple del estado de sus pagos.</li>
+                            <li>Acceso a documentos sin pedirlos por chat.</li>
+                            <li>Ingreso con su propia cuenta, desde cualquier dispositivo.</li>
+                            <li>Transparencia sobre los cobros de su comunidad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Cómo funciona</h2>
+                <p class="section-lead">Poner tu comunidad en marcha toma tres pasos.</p>
+                <ol class="steps">
+                    <li>
+                        <strong>1. Conversemos</strong>
+                        <p>Escríbenos y cuéntanos sobre tu comunidad: cantidad de unidades y cómo gestionan hoy los gastos comunes.</p>
+                    </li>
+                    <li>
+                        <strong>2. Configuramos tu espacio</strong>
+                        <p>Creamos el espacio de tu condominio en la plataforma y los accesos de administración.</p>
+                    </li>
+                    <li>
+                        <strong>3. Tu comunidad ingresa</strong>
+                        <p>Administradores y residentes entran con su cuenta desde el navegador y empiezan a operar.</p>
+                    </li>
+                </ol>
+                <div class="center">
+                    <a href="mailto:contacto@mastema.tech?subject=Quiero%20GastoF%C3%A1cil%20para%20mi%20comunidad" class="btn btn-primary">Empezar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="roles" class="section">
+            <div class="container">
+                <h2 class="section-title">Roles de acceso</h2>
+                <p class="section-lead">Cada persona ve lo que le corresponde según su rol.</p>
+                <div class="cards-3">
+                    <article class="card">
+                        <h3>Administrador</h3>
+                        <p>Gestiona los pagos, documentos y usuarios de su condominio. Es el perfil operativo de la comunidad.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Residente</h3>
+                        <p>Consulta sus pagos y accede a los documentos de su comunidad de forma simple y directa.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Superadministrador</h3>
+                        <p>Supervisa el conjunto de comunidades en la plataforma y apoya la operación general del servicio.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section section-dark">
+            <div class="container narrow">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Necesito instalar algo para usar GastoFácil?</summary>
+                    <p>No. Es una plataforma 100% web: se usa directamente desde el navegador en computador, tablet o teléfono.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿La información de mi comunidad se mezcla con la de otras?</summary>
+                    <p>No. La plataforma es multi-tenant: cada condominio tiene su propio espacio aislado con sus usuarios y su información.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué pasa con mis documentos y comprobantes?</summary>
+                    <p>Quedan almacenados de forma centralizada en la plataforma, disponibles para consulta y con respaldo en infraestructura cloud.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cómo parte mi comunidad?</summary>
+                    <p>Escríbenos a <a href="mailto:contacto@mastema.tech">contacto@mastema.tech</a>. Configuramos el espacio de tu condominio y creamos los accesos iniciales.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Quién está detrás de GastoFácil?</summary>
+                    <p>GastoFácil es un proyecto de <a href="https://mastema.tech" target="_blank" rel="noopener noreferrer">Mastema Tech Solutions</a>, startup dedicada al desarrollo de SaaS, soporte TI y ciberseguridad.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="contacto" class="section cta">
+            <div class="container narrow center">
+                <h2>Ordena los gastos comunes de tu comunidad</h2>
+                <p>Escríbenos y agendemos una demo para tu condominio o administración.</p>
+                <div class="hero-buttons center">
+                    <a href="mailto:contacto@mastema.tech?subject=Demo%20GastoF%C3%A1cil" class="btn btn-primary">Solicitar demo</a>
+                    <a href="https://gastofacil.femedinare.tech/" class="btn btn-secondary">Ya soy usuario: ingresar</a>
+                </div>
+                <p class="contact-direct">Contacto directo: <a href="mailto:contacto@mastema.tech">contacto@mastema.tech</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <p>&copy; <span id="year">2026</span> GastoFácil · Un proyecto de <a href="https://mastema.tech" target="_blank" rel="noopener noreferrer">Mastema Tech Solutions</a></p>
+            <div class="footer-links">
+                <a href="https://gastofacil.femedinare.tech/">Plataforma</a>
+                <a href="https://mastema.tech" target="_blank" rel="noopener noreferrer">Mastema.tech</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

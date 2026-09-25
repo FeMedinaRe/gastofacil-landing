@@ -28,9 +28,19 @@
                     <li><a href="#roles">Roles</a></li>
                     <li><a href="#precios">Precios</a></li>
                     <li><a href="#faq">Preguntas</a></li>
+                    <li>
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
             </nav>
-            <a href="https://gastofacil.femedinare.tech/" class="btn btn-primary btn-sm">Ingresar a la plataforma</a>
+            <a href="https://gastofacil.femedinare.tech/" class="btn btn-primary btn-sm">Ingresar</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -47,6 +57,11 @@
             <li><a href="#roles">Roles</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="#faq">Preguntas</a></li>
+            <li>
+                <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Cambiar tema">
+                    <span id="theme-text-mobile">Cambiar a modo oscuro</span>
+                </button>
+            </li>
             <li><a href="https://gastofacil.femedinare.tech/" class="btn btn-primary">Ingresar a la plataforma</a></li>
         </ul>
     </nav>
@@ -210,49 +225,46 @@
         <section id="precios" class="section">
             <div class="container">
                 <h2 class="section-title">Precios</h2>
-                <p class="section-lead">Planes mensuales por comunidad, sin contratos anuales ni costos ocultos. Parte gratis y sube de plan cuando tu comunidad lo necesite.</p>
+                <p class="section-lead">Planes mensuales por comunidad, sin contratos anuales ni costos ocultos.</p>
                 <div class="cards-3 pricing">
                     <article class="card plan">
                         <h3>Básico</h3>
                         <p class="plan-price">$0 <span>/ mes</span></p>
-                        <p class="plan-tagline">Para comunidades pequeñas que quieren ordenar sus gastos sin costo.</p>
+                        <p class="plan-tagline">Para comunidades pequeñas.</p>
                         <ul class="check-list">
                             <li>1 comunidad, hasta 30 unidades.</li>
-                            <li>Registro y consulta de pagos por unidad y período.</li>
+                            <li>Registro y consulta de pagos.</li>
                             <li>1 usuario administrador.</li>
-                            <li>Documentos y comprobantes hasta 1 GB.</li>
+                            <li>Documentos hasta 1 GB.</li>
                         </ul>
                         <a href="mailto:contacto@mastema.tech?subject=GastoF%C3%A1cil%20Plan%20B%C3%A1sico" class="btn btn-secondary">Empezar gratis</a>
                     </article>
                     <article class="card plan plan-featured">
                         <p class="plan-badge">Recomendado</p>
                         <h3>Comunidad</h3>
-                        <p class="plan-price">$24.990 <span>/ mes por comunidad</span></p>
-                        <p class="plan-tagline">Para condominios en operación que necesitan control total del día a día.</p>
+                        <p class="plan-price">$24.990 <span>/ mes</span></p>
+                        <p class="plan-tagline">Para condominios en operación.</p>
                         <ul class="check-list">
                             <li>Todo lo del plan Básico.</li>
-                            <li>Unidades ilimitadas y roles de administrador y residente.</li>
-                            <li>Documentos y comprobantes hasta 10 GB.</li>
-                            <li>Historial de pagos y reportes por período.</li>
-                            <li>Soporte por correo electrónico.</li>
+                            <li>Unidades ilimitadas.</li>
+                            <li>Documentos hasta 10 GB.</li>
+                            <li>Historial de pagos y reportes.</li>
+                            <li>Soporte por correo.</li>
                         </ul>
-                        <a href="https://sandbox.flow.cl/app/web/pay.php?token=37708AC8B15FFA777FD43833BEC082DEB663CC7L" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pagar plan Comunidad</a>
-                        <p class="plan-note">Pago de prueba en sandbox Flow · Orden 10318870</p>
+                        <a href="https://sandbox.flow.cl/app/web/pay.php?token=37708AC8B15FFA777FD43833BEC082DEB663CC7L" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pagar plan</a>
                     </article>
                     <article class="card plan">
                         <h3>Administradora</h3>
                         <p class="plan-price">$59.990 <span>/ mes</span></p>
-                        <p class="plan-tagline">Para administradoras que gestionan varias comunidades desde un solo lugar.</p>
+                        <p class="plan-tagline">Para administradoras multi-comunidad.</p>
                         <ul class="check-list">
                             <li>Todo lo del plan Comunidad.</li>
-                            <li>Comunidades ilimitadas en una sola cuenta.</li>
-                            <li>Panel de superadministración con vista consolidada.</li>
-                            <li>Usuarios y administradores ilimitados.</li>
-                            <li>Reportes consolidados multi-comunidad.</li>
+                            <li>Comunidades ilimitadas.</li>
+                            <li>Panel de superadministración.</li>
+                            <li>Reportes consolidados.</li>
                             <li>Soporte prioritario.</li>
                         </ul>
-                        <a href="https://sandbox.flow.cl/app/web/pay.php?token=CDD99D182BD1B6A4672D918FBF1395AFDD29D47Y" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pagar plan Administradora</a>
-                        <p class="plan-note">Pago de prueba en sandbox Flow · Orden 10318871</p>
+                        <a href="https://sandbox.flow.cl/app/web/pay.php?token=CDD99D182BD1B6A4672D918FBF1395AFDD29D47Y" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pagar plan</a>
                     </article>
                 </div>
             </div>
@@ -279,7 +291,7 @@
                 </details>
                 <details class="faq-item">
                     <summary>¿Quién está detrás de GastoFácil?</summary>
-                    <p>GastoFácil es un proyecto de <a href="https://mastema.tech" target="_blank" rel="noopener noreferrer">Mastema Tech Solutions</a>, startup dedicada al desarrollo de SaaS, soporte TI y ciberseguridad.</p>
+                    <p>GastoFácil es un proyecto de <a href="https://mastema.tech" target="_blank" rel="noopener noreferrer">Mastema Tech Solutions</a>.</p>
                 </details>
             </div>
         </section>

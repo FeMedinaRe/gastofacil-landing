@@ -32,8 +32,8 @@
 [data-theme="dark"], :root[data-theme="dark"] {
     --primary: #22c55e;
     --primary-dark: #16a34a;
-    --dark: #f8fafc;
-    --dark-2: #e2e8f0;
+    --dark: #0f172a;
+    --dark-2: #1e293b;
     --bg: #0f172a;
     --bg-soft: #1e293b;
     --text: #e2e8f0;
@@ -61,8 +61,8 @@
     :root:not([data-theme="light"]) {
         --primary: #22c55e;
         --primary-dark: #16a34a;
-        --dark: #f8fafc;
-        --dark-2: #e2e8f0;
+        --dark: #0f172a;
+        --dark-2: #1e293b;
         --bg: #0f172a;
         --bg-soft: #1e293b;
         --text: #e2e8f0;
@@ -101,8 +101,8 @@ body {
     position: absolute;
     left: -9999px;
     top: 0;
-    background: var(--dark);
-    color: #fff;
+    background: var(--text-heading);
+    color: var(--bg);
     padding: 0.75rem 1rem;
     z-index: 100;
 }
@@ -177,7 +177,7 @@ body {
     min-height: 44px;
     justify-content: center;
 }
-.menu-toggle span { display: block; width: 24px; height: 3px; background: var(--dark); border-radius: 2px; }
+.menu-toggle span { display: block; width: 24px; height: 3px; background: var(--text-heading); border-radius: 2px; }
 
 .mobile-nav { display: none; background: var(--bg); border-bottom: 1px solid var(--border); }
 .mobile-nav.active { display: block; }
@@ -256,12 +256,49 @@ body {
 /* Sections */
 .section { padding: 4rem 0; }
 .section-dark { background: var(--dark); color: #e5e7eb; }
-.section-dark .section-title { color: var(--dark-2); }
-.section-dark .section-lead { color: var(--muted); }
+.section-dark .section-title { color: #f8fafc; }
+.section-dark .section-lead { color: #94a3b8; }
 .section-dark .card { background: var(--dark-2); border-color: var(--border); color: #e5e7eb; }
-.section-dark .card h3, .section-dark .card strong { color: var(--dark-2); }
+.section-dark .card h3, .section-dark .card strong { color: #f8fafc; }
 .section-dark .card p { color: #cbd5e1; }
 .section-dark a { color: #6ee7b7; }
+
+/* In dark mode, section-dark should invert to light for contrast */
+[data-theme="dark"] .section-dark,
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .section-dark {
+        background: var(--bg-soft);
+        color: var(--text);
+    }
+    [data-theme="dark"] .section-dark .section-title,
+    :root:not([data-theme="light"]) .section-dark .section-title {
+        color: var(--text-heading);
+    }
+    [data-theme="dark"] .section-dark .section-lead,
+    :root:not([data-theme="light"]) .section-dark .section-lead {
+        color: var(--muted);
+    }
+    [data-theme="dark"] .section-dark .card,
+    :root:not([data-theme="light"]) .section-dark .card {
+        background: var(--bg);
+        border-color: var(--border);
+        color: var(--text);
+    }
+    [data-theme="dark"] .section-dark .card h3,
+    [data-theme="dark"] .section-dark .card strong,
+    :root:not([data-theme="light"]) .section-dark .card h3,
+    :root:not([data-theme="light"]) .section-dark .card strong {
+        color: var(--text-heading);
+    }
+    [data-theme="dark"] .section-dark .card p,
+    :root:not([data-theme="light"]) .section-dark .card p {
+        color: var(--text);
+    }
+    [data-theme="dark"] .section-dark a,
+    :root:not([data-theme="light"]) .section-dark a {
+        color: var(--primary-dark);
+    }
+}
 
 .section-title { font-size: 2rem; color: var(--text-heading); margin-bottom: 0.75rem; text-align: center; }
 .section-lead { text-align: center; color: var(--muted); max-width: 700px; margin: 0 auto 2.5rem; font-size: 1.05rem; }
@@ -285,7 +322,7 @@ body {
 
 .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 2rem; counter-reset: step; }
 .steps li { background: var(--dark-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
-.steps strong { color: var(--dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
+.steps strong { color: #f8fafc; font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
 .steps p { color: #cbd5e1; }
 
 .faq-item {
@@ -295,7 +332,7 @@ body {
     padding: 1rem 1.25rem;
     margin-bottom: 0.75rem;
 }
-.faq-item summary { cursor: pointer; font-weight: 700; color: var(--dark); }
+.faq-item summary { cursor: pointer; font-weight: 700; color: #f8fafc; }
 .faq-item p { margin-top: 0.5rem; color: #cbd5e1; }
 
 .cta { background: linear-gradient(180deg, var(--bg-soft), var(--bg)); }

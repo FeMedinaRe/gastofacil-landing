@@ -142,16 +142,19 @@ body {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
     transition: background-color 0.3s ease;
 }
 
-[data-theme="dark"] .navbar,
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .navbar {
-        background: rgba(15, 23, 42, 0.95) !important;
+[data-theme="light"] .navbar {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .navbar {
+        background: rgba(255, 255, 255, 0.95);
     }
 }
 
@@ -181,7 +184,17 @@ body {
     min-height: 44px;
     justify-content: center;
 }
-.menu-toggle span { display: block; width: 24px; height: 3px; background: var(--text-heading); border-radius: 2px; }
+.menu-toggle span { display: block; width: 24px; height: 3px; background: #f8fafc; border-radius: 2px; }
+
+[data-theme="light"] .menu-toggle span {
+    background: var(--text-heading);
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .menu-toggle span {
+        background: var(--text-heading);
+    }
+}
 
 .mobile-nav { display: none; background: var(--bg); border-bottom: 1px solid var(--border); }
 .mobile-nav.active { display: block; }
